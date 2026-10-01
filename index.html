@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pitts Roofing Company | Family & Veteran-Owned Roofing in Haltom City, TX</title>
+<meta name="description" content="Pitts Roofing Company — family and veteran-owned roofing since 1992. Roof replacement, repairs, new construction & inspections in Dallas/Fort Worth. Call (817) 838-2299.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16294d; --navy2:#0f1e3a; --amber:#f5a623; --amber2:#d98a0b;
+  --cream:#faf8f3; --text:#2d3138; --muted:#5d6673;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Source Sans 3',Arial,sans-serif;color:var(--text);line-height:1.65;background:#fff}
+h1,h2,h3{font-family:'Oswald',Arial,sans-serif;line-height:1.25;color:var(--navy);text-transform:uppercase}
+a{text-decoration:none}
+nav{position:sticky;top:0;z-index:100;background:var(--navy2);display:flex;align-items:center;justify-content:space-between;padding:.85rem 5%}
+.brand{font-family:'Oswald';font-weight:700;font-size:1.2rem;color:#fff;letter-spacing:1px}
+.brand span{color:var(--amber)}
+.nav-call{background:var(--amber);color:var(--navy2);font-weight:700;padding:.55rem 1.2rem;border-radius:6px;font-size:.95rem;transition:background .2s}
+.nav-call:hover{background:#ffc14d}
+.hero{background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 55%,#274a7d 100%);color:#fff;padding:4.6rem 5% 4.2rem;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-100px;bottom:-160px;width:460px;height:460px;border-radius:50%;background:rgba(245,166,35,.12)}
+.hero-inner{max-width:1050px;margin:0 auto;position:relative;z-index:2}
+.badge{display:inline-block;background:rgba(245,166,35,.16);border:1px solid var(--amber);color:var(--amber);padding:.35rem .95rem;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1.2rem;text-transform:uppercase}
+.hero h1{color:#fff;font-size:clamp(2.1rem,5.2vw,3.5rem);font-weight:700;margin-bottom:1rem;max-width:18ch}
+.hero p{font-size:1.1rem;max-width:58ch;color:#dbe3ee;margin-bottom:2rem}
+.cta-row{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-call{background:var(--amber);color:var(--navy2);font-family:'Oswald';font-weight:700;font-size:1.15rem;letter-spacing:.5px;padding:.9rem 2.1rem;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.3);transition:transform .15s}
+.btn-call:hover{transform:translateY(-2px)}
+.btn-sec{border:2px solid rgba(255,255,255,.55);color:#fff;font-weight:600;padding:.85rem 1.6rem;border-radius:8px}
+.trust{background:var(--amber);padding:1.1rem 5%;display:flex;justify-content:center;gap:2.6rem;flex-wrap:wrap;text-align:center}
+.trust div{font-family:'Oswald';font-weight:600;font-size:1rem;color:var(--navy2);text-transform:uppercase;letter-spacing:.5px}
+.trust small{display:block;font-family:'Source Sans 3';font-weight:400;color:#5d4a10;font-size:.78rem;margin-top:.1rem;text-transform:none;letter-spacing:0}
+section{padding:4rem 5%}
+.wrap{max-width:1050px;margin:0 auto}
+.kicker{color:var(--amber2);font-weight:700;text-transform:uppercase;letter-spacing:1.6px;font-size:.8rem;margin-bottom:.5rem}
+h2.sec{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:700;margin-bottom:1rem}
+.lead{font-size:1.06rem;color:var(--muted);max-width:62ch;margin-bottom:2.5rem}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.4rem}
+.svc{background:#fff;border:1px solid #e8e2d4;border-radius:12px;padding:1.7rem 1.5rem;box-shadow:0 3px 12px rgba(22,41,77,.06);border-top:5px solid var(--amber)}
+.svc h3{font-size:1.2rem;margin-bottom:.5rem}
+.svc p{font-size:.94rem;color:var(--muted)}
+.svc .icon{font-size:1.7rem;margin-bottom:.7rem;display:block}
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:start}
+.about ul{list-style:none;margin-top:1.4rem}
+.about li{padding:.7rem 0 .7rem 2rem;position:relative;border-bottom:1px solid #e2dac6;font-size:.97rem}
+.about li::before{content:"★";position:absolute;left:.2rem;color:var(--amber2);font-weight:800}
+.info-card{background:var(--navy);color:#fff;border-radius:12px;padding:2rem;margin-top:1.5rem}
+.info-card h3{color:var(--amber);margin-bottom:.8rem;font-size:1.35rem}
+.info-card p{font-size:.95rem;margin:.35rem 0;color:#dbe3ee}
+/* TESTIMONIALS */
+.reviews{background:#fff}
+.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem;margin-top:2rem}
+.review{background:var(--cream);border:1px solid #e8e2d4;border-radius:12px;padding:1.8rem 1.6rem;position:relative}
+.review .stars{color:var(--amber2);font-size:1.05rem;margin-bottom:.8rem;letter-spacing:2px}
+.review p{font-size:.96rem;font-style:italic;color:var(--text);margin-bottom:1rem}
+.review .who{font-weight:700;font-size:.9rem;color:var(--navy)}
+.review .src{display:block;font-weight:400;font-size:.78rem;color:var(--muted)}
+.contact{background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 60%,#274a7d 100%);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact .lead{color:#c6d2e2;margin-left:auto;margin-right:auto;max-width:52ch}
+.contact .cta-row{justify-content:center}
+footer{background:#0b1526;color:#8b99ad;text-align:center;padding:1.6rem 5%;font-size:.85rem}
+footer strong{color:#c6d2e2}
+@media(max-width:760px){
+  .about-grid{grid-template-columns:1fr;gap:2rem}
+  section{padding:3rem 5%}
+  .hero{padding:3.2rem 5% 2.8rem}
+  .trust{gap:1.2rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="#top">PITTS <span>ROOFING</span> COMPANY</a>
+  <a class="nav-call" href="tel:+18178382299">Call (817) 838-2299</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <span class="badge">★ Family &amp; Veteran-Owned · Since 1992</span>
+    <h1>Your DFW Commercial &amp; Residential Roofing Company</h1>
+    <p>Since 1992, Pitts Roofing has proudly served the Dallas/Fort Worth community with top-notch roofing services. Our commitment to integrity, service, and excellence means we consistently meet and exceed your roofing expectations.</p>
+    <div class="cta-row">
+      <a class="btn-call" href="tel:+18178382299">Call (817) 838-2299</a>
+      <a class="btn-sec" href="#services">See Our Services</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div>Since 1992<small>nearly 30 years in North Texas</small></div>
+  <div>Family &amp; Veteran-Owned<small>integrity, service, excellence</small></div>
+  <div>Residential &amp; Commercial<small>all Texas roofing needs</small></div>
+  <div>Dallas / Fort Worth<small>your local roofing partner</small></div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="kicker">Our Services</div>
+    <h2 class="sec">Comprehensive Roofing Services, Done With Precision</h2>
+    <p class="lead">Our comprehensive range of services is designed to meet all your Texas roofing needs with quality and precision.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <span class="icon">🏚️</span>
+        <h3>Tile Roof Replacement</h3>
+        <p>Tile roof replacements built for Texas heat and storms — efficient, cost-effective, and installed to last.</p>
+      </div>
+      <div class="svc">
+        <span class="icon">🏠</span>
+        <h3>Roof Replacements</h3>
+        <p>Transform your property with our efficient and cost-effective roof replacement solutions.</p>
+      </div>
+      <div class="svc">
+        <span class="icon">🛠️</span>
+        <h3>Maintenance &amp; Repairs</h3>
+        <p>Count on us to keep your roof in top shape, with expert maintenance and swift repairs.</p>
+      </div>
+      <div class="svc">
+        <span class="icon">🏗️</span>
+        <h3>New Construction</h3>
+        <p>From the ground up, we provide impeccable roofing for your new construction projects.</p>
+      </div>
+      <div class="svc">
+        <span class="icon">🔍</span>
+        <h3>Roof Inspection</h3>
+        <p>Ensure peace of mind with our thorough roof inspections, identifying issues before they escalate.</p>
+      </div>
+      <div class="svc">
+        <span class="icon">🏢</span>
+        <h3>Commercial Roofing</h3>
+        <p>Repair, replacement, and restoration solutions for commercial buildings — the right materials for your building type.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="kicker">Why Pitts Roofing</div>
+        <h2 class="sec">The Roofing Partner You Can Trust</h2>
+        <p>In the competitive DFW roofing market, we understand you have choices. At Pitts Roofing, we're determined to be your top choice — our commitment to excellence, integrity, and service sets us apart.</p>
+        <ul>
+          <li>Founded on integrity, service, and excellence — values honed over 24 years of U.S. Air Force and Texas Air National Guard service</li>
+          <li>Family-owned and operated by Dan Pitts Jr. since 1992</li>
+          <li>We go above and beyond in every project we undertake</li>
+          <li>Serving Dallas, Fort Worth, Haltom City, and the greater DFW area</li>
+        </ul>
+      </div>
+      <div>
+        <div class="info-card">
+          <h3>Visit or Call Us</h3>
+          <p><strong>📍</strong> 3917 Broadway Ave<br>Haltom City, TX 76117</p>
+          <p><strong>📞</strong> (817) 838-2299</p>
+          <p><strong>🕗</strong> Mon–Fri 8 AM – 6 PM</p>
+          <p style="margin-top:.8rem">Connect with one of our experts for roofing solutions tailored to your needs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="kicker">Customer Reviews</div>
+    <h2 class="sec">What Our Customers Say</h2>
+    <p class="lead">Real reviews from real homeowners across Dallas/Fort Worth.</p>
+    <div class="review-grid">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Excellent roofing experience. The roofers were on time and finished in a very timely fashion. They were polite, fast workers and did a great job on clean-up with no damage. Do yourself a favor if you need a new roof and hire these guys!!!"</p>
+        <div class="who">Jackie<span class="src">Published on pittsroofing.com</span></div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Dan and his team did an exceptional job. They did a thorough inspection of my home to identify and troubleshoot any potential problems prior to the install. They completed the roof in one day and it looks great. HIGHLY recommend Pitts Roofing."</p>
+        <div class="who">Sondra Wilkie<span class="src">Published on pittsroofing.com</span></div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Daniel inspected my roof and saw no issues with it. He even hammered some shingles down for me. Very honest work! 100% recommended!"</p>
+        <div class="who">Pedro Celis<span class="src">Published on pittsroofing.com</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker" style="color:var(--amber)">Contact Us</div>
+    <h2 class="sec">Get Roofing Solutions Tailored to Your Needs</h2>
+    <p class="lead">Connect with one of our experts today — serving the Dallas/Fort Worth community since 1992.</p>
+    <div class="cta-row">
+      <a class="btn-call" href="tel:+18178382299">Call (817) 838-2299</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>Pitts Roofing Company</strong> · 3917 Broadway Ave, Haltom City, TX 76117<br>
+  © 2026 Pitts Roofing Company. All rights reserved.
+</footer>
+
+</body>
+</html>
